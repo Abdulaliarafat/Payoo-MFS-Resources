@@ -7,7 +7,33 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    
+<body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-100">
+        <header>
+            <nav class="flex justify-center items-center mt-14">
+                <div class="mt-10 relative flex justify-center items-center  w-9/12 ">
+                    <img class="w-5/6 absolute pt-32" src="assets/bg.png" alt="">
+                    <img class=" w-16 z-10 " src="assets/Group.png" alt="">
+                </div>
+            </nav>
+        </header>
+        <!-- login section -->
+        <div class="  ">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <fieldset class="fieldset my-2">
+                    <label class="fieldset-label font-medium text-base text-black mb-2">Mobile Number</label>
+                    <input type="number" class="input border-none bg-gray-200 py-6 rounded-3xl text-base font-light mb-2" placeholder="Enter You Number" required/>
+                    <label class="fieldset-label font-medium text-base text-black mb-2">4 Digit Pin</label>
+                    <input type="text" class="input border-none bg-gray-200 py-6 rounded-3xl text-base font-light mb-0" placeholder="Enter 4 Digit Pin" required/>
+                    <button id="login-btn" class="btn bg-blue-700 text-white py-6 rounded-3xl mt-4">Login</button>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+    </section>
+    <script src="script/login.js"></script>
 </body>
 </html>
