@@ -17,7 +17,7 @@
                     <img class="w-12" src="assets/Group.png" alt="">
                     </div>
                    <div>
-                    <h1 class="font-extrabold text-lg">$ <span id="main-balence" class=" text-xl">4500</span></h1>
+                    <h1 class="font-extrabold text-xl">$ <span id="main-balence" class=" text-2xl text-fuchsia-800">4500</span></h1>
                     <p class="font-normal text-sm">Available Balance</p>
                    </div>
                </div>
@@ -52,7 +52,7 @@
                         <h3 class="text-sm">Pay Bill</h3>
                     </div>
 
-                    <div class="box border-no p-4 text-center rounded-md bg-white">
+                    <div id="Transactions-box" class="box border-no p-4 text-center rounded-md bg-white">
                         <img class="w-6 mb-2  mx-auto" src="assets/transaction1.png" alt="">
                         <h3 class="text-sm">Transactions</h3>
                     </div>
@@ -62,8 +62,8 @@
                     <div class="hero-content flex-col lg:flex-row-reverse">
                         <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                           <form class="card-body">
-                            <label class="font-medium text-base text-black mb-2">Select A Bank</label>
-                            <select class="select rounded-3xl text-base font-light  bg-gray-200">
+                            <legend class="font-medium text-base text-black mb-2">Select A Bank</legend>
+                            <select id="allbank" class="select rounded-3xl text-base font-light  bg-gray-200">
                                 <option disabled selected>Select bank</option>
                                 <option value="Bkash">Bkash</option>
                                 <option value="Nagad">Nagad</option>
@@ -91,7 +91,7 @@
                             <fieldset class="fieldset my-2">
                               <label class="fieldset-label  font-medium text-base text-black mb-2">Bank Account Number</label>
                               <input id="account-number-cashout" value="01869653364"  type="number" class="input  border-none bg-gray-200  rounded-3xl text-base font-light mb-0" placeholder="Enter 11 digit account number" required/>
-                              <label class="fieldset-label  font-medium text-base text-black mb-2">Amount to Add</label>
+                              <label class="fieldset-label  font-medium text-base text-black mb-2">Amount to cashout</label>
                               <input id="cashout-amount" type="number" class="input  border-none bg-gray-200  rounded-3xl text-base font-light mb-2" placeholder="Add Amount to withdraw" required/>
                               <label class="fieldset-label  font-medium text-base text-black mb-2">Pin Number</label>
                               <input id="cashout-pin" value="1234" type="text" class="input  border-none bg-gray-200  rounded-3xl text-base font-light mb-0" placeholder="Enter 4 digit pin number" required/>
@@ -101,10 +101,19 @@
                         </div>
                       </div>
                 </section>
+                <section id="tarnsaction-history">
+                  <h1 class="font-bold text-lg my-5">Tarnsaction history</h1>
+                <div id="tansection-container">
+
+                </div>
+                </section>
             </section>
         </header>
     </section>
+    <script src="utilites/toggole.js"></script>
     <script src="utilites/utilitis.js"></script>
     <script src="script/addmoney-function.js"></script>
+    <script src="script/cashout-function.js"></script>
+    <script src="script/Transactions.js"></script>
 </body>
 </html>
